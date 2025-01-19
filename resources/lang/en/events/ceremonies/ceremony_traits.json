@@ -35,6 +35,15 @@
         "intensity",
         "strength"
     ],
+    "arrogant": [
+        "confidence",
+	    "self-assuredness",
+	    "pride",
+	    "audacity",
+	    "decisiveness",
+	    "courage",
+	    "ambition"
+    ],
     "bloodthirsty": [
         "ferocity",
         "strength",
@@ -202,6 +211,13 @@
         "patience",
         "grace"
     ],
+    "competitive": [
+        "drive",
+	    "energy",
+	    "eagerness",
+	    "determination",
+	    "effort"
+    ],
     "confident": [
         "confidence",
         "resilience",
@@ -271,6 +287,26 @@
         "ferocity",
         "dedication",
         "fortitude"
+    ],
+    "flamboyant": [
+        "style",
+	    "affability",
+	    "brightness",
+	    "charisma",
+	    "verve",
+	    "flair",
+	    "flashiness"
+    ],
+    "gloomy": [
+        "realism",
+	    "effort",
+	    "tenacity"
+    ],
+    "grumpy": [
+        "constancy",
+	    "rigidity",
+	    "passion",
+	    "sense"
     ],
     "insecure": [
         "loyalty",
@@ -362,6 +398,11 @@
         "prudence",
         "attention"
     ],
+    "oblivious": [
+        "cool head",
+	    "neutrality",
+	    "composure"
+    ],
     "playful": [
         "enthusiasm",
         "spirit",
@@ -379,6 +420,14 @@
         "empathy",
         "zeal",
         "perseverance"
+    ],
+    "rebellious": [
+        "candor",
+	    "willfulness",
+	    "tenacity",
+	    "resolve",
+	    "boldness",
+	    "guts"
     ],
     "responsible": [
         "strength",

@@ -1042,7 +1042,7 @@
   },
   {
     "interaction_type": "antagonize",
-    "event_text": "During the Gathering, m_c makes scathing comments about o_c_n. o_c_n's leader blatantly ignores {PRONOUN/m_c/object}.",
+    "event_text": "During the Gathering, m_c makes scathing comments about o_c_n. o_c_n's leader is quite blatantly ignoring {PRONOUN/m_c/object} though.",
     "rel_change": 0,
     "m_c": {},
     "player_clan_temper": ["any"],

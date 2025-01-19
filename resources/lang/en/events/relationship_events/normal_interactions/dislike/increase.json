@@ -3,7 +3,7 @@
 		"id": "dislike_inc_low1",
 		"intensity": "low",
 		"interactions": [
-			"r_c bumped into m_c and didn't even apologize!",
+			"m_c had r_c bump into {PRONOUN/m_c/object}, and {PRONOUN/r_c/subject} didn't even apologize!",
 			"r_c stepped on m_c's paw and pretended not to notice.",
 			"m_c is grossed out by something r_c did.",
 			"m_c doesn't like the way r_c interacts with a Clanmate.",
@@ -13,7 +13,13 @@
 			"m_c doesn't think the object that r_c asked {PRONOUN/m_c/object} to find is real.",
 			"m_c got tricked into doing one of r_c's chores.",
 			"When m_c approached r_c, {PRONOUN/r_c/subject} made a weird face.",
-			"Something good happens to m_c and most Clanmates congratulate {PRONOUN/m_c/object}, but r_c doesn't say anything at all."
+			"Something good happens to m_c and most Clanmates congratulate {PRONOUN/m_c/object}, but r_c doesn't say anything at all.",
+			"m_c refuses to look at r_c.",
+			"m_c was in the middle of an important conversation before r_c rudely interrupted {PRONOUN/m_c/object}.",
+			"r_c blocked m_c's way and didn't apologize.",
+			"m_c made plans to share tongues with r_c but never showed up.",
+			"m_c accidentially stepped on r_c's tail.",
+			"m_c teased r_c's for having messy fur right after waking up."
 		]
 	},
 	{
@@ -37,8 +43,57 @@
 		}
 	},
 	{
+		"id": "dislike_inc_kit1",
+        "intensity": "low",
+		"interactions": [
+			"m_c brought r_c back to the nursery despite {PRONOUN/r_c/poss} whining protests.",
+            "m_c made r_c tidy up a mess {PRONOUN/r_c/subject} made and didn't let {PRONOUN/r_c/object} go until it was all done.",
+			"r_c heard m_c complaining about how {PRONOUN/m_c/subject} {VERB/m_c/aren't/isn't} a kitsitter and shouldn't have to watch m_c.",
+            "m_c sat r_c down for a <i>boooring</i> lecture on something {PRONOUN/r_c/subject} did wrong."
+		],
+		"main_status_constraint": [
+			"apprentice",
+            "warrior",
+            "elder",
+            "medicine cat",
+            "medicine cat apprentice",
+            "deputy",
+            "leader"
+		],
+		"random_status_constraint": [
+			"kitten"
+		],
+        "reaction_random_cat": {
+			"dislike": "increase"
+		}
+	},
+    {
+		"id": "dislike_inc_kit2",
+        "intensity": "low",
+		"interactions": [
+			"m_c had to clean up a mess r_c made.",
+            "r_c keeps asking m_c why even after being told to stop.",
+            "m_c had to drop everything to look for r_c after {PRONOUN/r_c/subject} went missing. Turns out {PRONOUN/r_c/object} {VERB/r_c/were/was} playing hide and seek by {PRONOUN/r_c/self} without telling anyone."
+		],
+		"main_status_constraint": [
+			"apprentice",
+            "warrior",
+            "elder",
+            "medicine cat",
+            "medicine cat apprentice",
+            "deputy",
+            "leader"
+		],
+		"random_status_constraint": [
+			"kitten"
+		],
+        "reaction_main_cat": {
+			"dislike": "increase"
+		}
+	},
+	{
 		"id": "dislike_inc_med1",
-		"intensity": [
+		"interactions": [
 			"m_c wishes r_c would take things more seriously.",
 			"m_c thinks r_c is acting childish lately.",
 			"m_c keeps complaining about something r_c did.",
@@ -48,7 +103,12 @@
 			"m_c is tired of interacting with r_c lately.",
 			"After sharing tongues, m_c washed off r_c's scent from {PRONOUN/m_c/poss} pelt.",
 			"A Clanmate notices m_c mocking r_c behind {PRONOUN/r_c/poss} back.",
-			"When m_c needs someone to do {PRONOUN/m_c/object} a favor, {PRONOUN/m_c/subject} never {VERB/m_c/ask/asks} r_c first."
+			"When m_c needs someone to do {PRONOUN/m_c/object} a favor, {PRONOUN/m_c/subject} never {VERB/m_c/ask/asks} r_c first.",
+			"m_c told r_c to get lost.",
+            "m_c swiped {PRONOUN/m_c/poss} paw at r_c.",
+            "m_c and r_c got into a disagreement earlier and are both still fuming over it.",
+            "m_c and r_c had a fight earlier and are both still fuming over it.",
+            "m_c doesn't like r_c's attitude."
 		]
 	},
 	{
@@ -64,7 +124,10 @@
 			"m_c spent the day arguing with r_c about whether {PRONOUN/r_c/subject} stole something from m_c.",
 			"m_c scoffed loudly at one of r_c's suggestions.",
 			"r_c keeps yawning during m_c's story.",
-			"r_c flicked some sand over m_c's fresh-kill while {PRONOUN/m_c/subject} {VERB/m_c/were/was} eating."
+			"r_c flicked some sand over m_c's fresh-kill while {PRONOUN/m_c/subject} {VERB/m_c/were/was} eating.",
+			"m_c is telling everyone in camp that r_c has greencough.",
+            "m_c took the last of r_c's favorite fresh kill right in front of {PRONOUN/r_c/object}.",
+			"m_c took the fresh kill r_c was eyeing all day."
 		],
 		"reaction_random_cat": {
 			"dislike": "increase"
@@ -81,7 +144,18 @@
 			"m_c laughed at r_c for making a mistake on a patrol.",
 			"m_c ignored r_c's advice on a patrol and nearly got hurt because of it.",
 			"m_c and r_c couldn't agree which way to go on a patrol and got home late.",
-			"m_c claimed to catch the prey that r_c caught on their patrol."
+			"m_c claimed to catch the prey that r_c caught on their patrol.",
+			"m_c lied about r_c being sick to take {PRONOUN/r_c/poss} spot on a patrol.",
+            "m_c scared away the prey r_c was stalking.",
+    		"m_c pulled r_c's tail during training.",
+    		"m_c made sure to let all the prey r_c likes get away during {PRONOUN/r_c/poss} patrol.",
+            "m_c keeps upstaging r_c.",
+    		"m_c refused to do a task with r_c, opting to do something else instead even while r_c scolded {PRONOUN/m_c/object} for ditching the task.",
+    		"m_c tripped r_c during a patrol.",
+    		"m_c and r_c were not in sync during training today.",
+    		"m_c threatens r_c to use {PRONOUN/m_c/poss} claws next time they train together.",
+            "m_c overheard r_c taking credit for catching the prey {PRONOUN/m_c/subject} caught."
+
 		],
 		"main_status_constraint": [
 			"apprentice",
@@ -108,7 +182,13 @@
 			"m_c smiles when r_c gets hurt.",
 			"m_c likes it when r_c is scolded for something.",
 			"The Clan notices that m_c's claws unsheath when r_c is nearby.",
-			"m_c is glaring daggers at r_c."
+			"m_c is glaring daggers at r_c.",
+			"m_c pulls a mean prank on r_c.",
+            "m_c knocked r_c into a puddle with a rough shove before feigning an apology.",
+            "m_c 'accidentally' tripped r_c.",
+            "m_c gave r_c a grimace before walking away without a word.",
+            "m_c smirks when {PRONOUN/m_c/subject} see r_c all by {PRONOUN/r_c/self}.",
+            "m_c enjoys watching things go wrong for r_c."
 		],
 		"main_trait_constraint": [
 			"vengeful",
@@ -123,11 +203,14 @@
 			"m_c is irritated by r_c's constant bragging.",
 			"r_c gets really close to m_c's face while talking and grosses m_c out with {PRONOUN/r_c/poss} bad breath.",
 			"m_c tells r_c to quiet down, but r_c doesn't listen.",
-			"r_c is boasting about {PRONOUN/r_c/poss} accomplishments to m_c, but m_c isn't impressed."
+			"r_c is boasting about {PRONOUN/r_c/poss} accomplishments to m_c, but m_c isn't impressed.",
+			"r_c gets really close to m_c's face while talking and grosses m_c out with {PRONOUN/r_c/poss} fox breath.",
+			"r_c doesn't understand why m_c lied to save a cats' feelings."
 		],
 		"random_trait_constraint": [
 			"shameless",
-			"bold"
+			"bold",
+			"arrogant"
 		]
 	},
 	{
@@ -146,6 +229,32 @@
 		]
 	},
 	{
+		"id": "dislike_inc_kit_app",
+		"interactions": [
+            		"m_c just can't stand r_c's lack of knowledge on things.",
+            		"m_c kept talking down to r_c all day, over explaining even the most simple things.",
+            		"m_c keeps talking to r_c like {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} younger then {PRONOUN/r_c/subject} {VERB/r_c/are/is}.",
+            		"m_c refused to so much as acknowledge r_c simply because of how young {PRONOUN/r_c/subject} {VERB/r_c/were/was}."
+		],
+        "main_trait_constraint": [
+            "arrogant",
+            "grumpy",
+            "cold"
+            ],
+		"main_status_constraint": [
+			"warrior",
+			"deputy",
+			"leader"
+		],
+		"random_status_constraint": [
+			"apprentice",
+			"kit"
+		],
+		"reaction_random_cat": {
+			"dislike": "increase"
+		}
+	},
+	{
 		"id": "dislike_effect_other1",
 		"relationship_constraint": [
 			"dislike_40"
@@ -161,7 +270,8 @@
 			"m_c and r_c argue and fight like it's in their blood to do so.",
 			"The Clan worries about whether r_c would help m_c if something went wrong.",
 			"r_c is telling others about how terrible m_c can really be.",
-			"r_c leaves as soon as m_c arrives and refuses to be nearby."
+			"r_c leaves as soon as m_c arrives and refuses to be nearby.",
+			"m_c gagged at just the thought of being around r_c!"
 		]
 	},
 	{
@@ -171,7 +281,10 @@
 			"m_c had to nip r_c on the rump because {PRONOUN/r_c/subject} {VERB/r_c/were/was} being naughty.",
 			"m_c growls at r_c to get out from under {PRONOUN/m_c/poss} paws.",
 			"m_c snaps at r_c's annoying antics.",
-			"m_c tells someone to get r_c away from {PRONOUN/m_c/object}."
+			"m_c tells someone to get r_c away from {PRONOUN/m_c/object}.",
+			"r_c wishes {PRONOUN/r_c/subject} {VERB/r_c/was/were} all grown up so m_c would take {PRONOUN/r_c/object} seriously.",
+            "r_c asked m_c to tell {PRONOUN/r_c/object} a story only to get hissed at instead.",
+            "m_c took the toy r_c was playing with before telling {PRONOUN/m_c/object} to return to the nursery."
 		],
 		"main_status_constraint": [
 			"elder",
@@ -192,6 +305,42 @@
 		}
 	},
 	{
+		"id": "dislike_kit_inc_med2",
+		"interactions": [
+			"m_c purposefully tripped r_c.",
+            "m_c growls at r_c to get out of {PRONOUN/m_c/poss} way.",
+			"m_c snaps at r_c's annoying antics.",
+			"m_c snarls at r_c when asked to play. {PRONOUN/m_c/subject} will not spend {PRONOUN/m_c/poss} time playing stupid games."
+		],
+		"main_status_constraint": [
+			"kitten",
+            "elder",
+			"apprentice",
+			"warrior",
+			"mediator apprentice",
+			"mediator",
+			"medicine cat apprentice",
+			"medicine cat",
+			"deputy",
+			"leader"
+		],
+		"random_status_constraint": [
+			"kitten"
+		],
+        "main_trait_constraint": [
+			"troublesome",
+            "cold",
+            "vengeful",
+            "strange",
+            "grumpy",
+            "bullying",
+            "bossy"
+		],
+		"reaction_random_cat": {
+			"dislike": "increase"
+		}
+	},
+	{
 		"id": "dislike_dep_leader_inc_med1",
 		"interactions": [
 			"m_c punishes r_c with extra work.",
@@ -199,7 +348,9 @@
 			"m_c gives r_c a particularly hard task, expecting {PRONOUN/r_c/object} to fail.",
 			"m_c always tries to avoid making r_c the leader of a patrol.",
 			"m_c scolds r_c like a kit for something trivial.",
-			"m_c says r_c sets a bad example of a warrior."
+			"m_c says r_c sets a bad example of a warrior.",
+			"m_c tells other cats that r_c is not doing well in {PRONOUN/r_c/poss} training.",
+			"m_c gave r_c twice as much work as the other cats {PRONOUN/r_c/poss} age."
 		],
 		"main_status_constraint": [
 			"deputy",

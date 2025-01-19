@@ -4808,6 +4808,16 @@
                     }
                 ],
                 "other_clan_rep": -3
+            },
+            {
+                "text": "p_l orders the patrol to go back to camp, asking that r_c be left behind to help {PRONOUN/p_l/object}. As p_l grabs the kits by their scruff, a o_c_n patrol suddenly appears, looking furious, with their claws out and fangs bared! p_l and r_c race back over to their side of the border, just barely escaping the wrath of o_c_n warriors. It seems they've accidentally stolen two kits now.",
+                "exp": 20,
+                "weight": 20,
+                "other_clan_rep": -8,
+                "new_cat": [
+                    ["age: kitten", "backstory: otherclan5"],
+                    ["age: kitten", "backstory: otherclan5"]
+                ]
             }
         ],
         "antag_fail_outcomes": [

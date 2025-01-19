@@ -251,11 +251,9 @@
   "vengeful": {
     "body": [
       "r_c wants to tear the world apart. Looking down at m_c's lifeless body, r_c digs {PRONOUN/r_c/poss} claws into the ground and grits {PRONOUN/r_c/poss} teeth, vowing to {PRONOUN/r_c/self} to avenge {PRONOUN/r_c/poss} lost love in any way possible."
-
     ],
     "no_body": [
       "The world is so much colder now without m_c in it. r_c stares up at the sky, yowling {PRONOUN/r_c/poss} fury at StarClan for taking away {PRONOUN/r_c/poss} love. No matter what, and wherever {PRONOUN/r_c/subject} {VERB/r_c/go/goes}, {PRONOUN/r_c/subject} will never stop searching for m_c."
-
     ]
   },
   "wise": {

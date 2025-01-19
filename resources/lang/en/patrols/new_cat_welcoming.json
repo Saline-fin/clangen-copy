@@ -90,6 +90,15 @@
                 "new_cat": [
                     ["loner", "meeting"]
                 ]
+            },
+            {
+                "text": "The patrol approaches the loner and tells them firmly that newcomers aren't welcome here. The loner doesn't seem to get it, and has to be driven across the border.",
+                "exp": 10,
+                "weight": 20,
+                "outsider_rep": -2,
+                "new_cat": [
+                    ["loner", "meeting"]
+                ]
             }
         ]
     },
@@ -700,6 +709,15 @@
                 "new_cat": [
                     ["loner", "meeting"]
                 ]
+            },
+            {
+                "text": "The patrol approaches the loner and tells them firmly that newcomers aren't welcome here. The loner doesn't seem to get it, and has to be driven across the border.",
+                "exp": 10,
+                "weight": 20,
+                "outsider_rep": -2,
+                "new_cat": [
+                    ["loner", "meeting"]
+                ]
             }
         ]
     },
@@ -775,7 +793,13 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "The patrol approaches the kittypet and tells them firmly that newcomers aren't being taken in right now. The kittypet seems disappointed, but leaves anyway.",
+                "text": "p_l approaches the kittypet and tells them firmly that newcomers aren't being taken in right now. The kittypet seems disappointed, but leaves anyway.",
+                "exp": 10,
+                "weight": 20,
+                "outsider_rep": -2
+            },
+            {
+                "text": "The patrol approaches the kittypet and tells them firmly that newcomers aren't welcome here. The kittypet doesn't seem to get it, and has to be driven across the border.",
                 "exp": 10,
                 "weight": 20,
                 "outsider_rep": -2
@@ -858,6 +882,12 @@
                 "exp": 10,
                 "weight": 20,
                 "outsider_rep": -2
+            },
+            {
+                "text": "The patrol approaches the kittypet and tells them firmly that newcomers aren't welcome here. The kittypet doesn't seem to get it, and has to be driven across the border.",
+                "exp": 10,
+                "weight": 20,
+                "outsider_rep": -2
             }
         ]
     },
@@ -922,11 +952,29 @@
                 "new_cat": [
                     ["meeting", "dead"]
                 ]
+            },
+            {
+                "text": "r_c attempts to move the cat out of their territory for someone else to find, but the cat passes before they can make it. They bury the cat outside their borders.",
+                "exp": 0,
+                "weight": 20,
+                "outsider_rep": -1,
+                "new_cat": [
+                    ["meeting", "dead"]
+                ]
             }
         ],
         "antag_success_outcomes": [
             {
                 "text": "The patrol helps the cat to the nearest healer. They can't spare the herbs for an outsider right now.",
+                "exp": 10,
+                "weight": 20,
+                "outsider_rep": -2,
+                "new_cat": [
+                    ["loner", "meeting"]
+                ]
+            },
+            {
+                "text": "r_c moves the cat out of their territory. c_n can't spare the medical supplies to treat a stranger.",
                 "exp": 10,
                 "weight": 20,
                 "outsider_rep": -2,
@@ -979,6 +1027,15 @@
                 ]
             },
             {
+                "text": "As p_l inspects the cat, {PRONOUN/p_l/subject} {VERB/p_l/find/finds} that they are already hunting with their ancestors. {PRONOUN/p_l/subject/CAP} {VERB/p_l/take/takes} a moment to say a prayer for the cat and bury them.",
+                "exp": 0,
+                "weight": 20,
+                "outsider_rep": 0,
+                "new_cat": [
+                    ["meeting", "dead"]
+                ]
+            },
+            {
                 "text": "p_l attempts to carry the cat back to camp, but the cat passes on the way. {PRONOUN/p_l/subject/CAP} {VERB/p_l/stop/stops} to bury the cat before continuing home.",
                 "exp": 0,
                 "weight": 20,
@@ -1002,6 +1059,15 @@
         "antag_success_outcomes": [
             {
                 "text": "p_l helps the cat to the nearest healer. c_n can't spare the herbs for an outsider right now.",
+                "exp": 10,
+                "weight": 20,
+                "outsider_rep": -2,
+                "new_cat": [
+                    ["loner", "meeting"]
+                ]
+            },
+            {
+                "text": "p_l moves the cat out of their territory. They can't spare the medical supplies to treat a stranger.",
                 "exp": 10,
                 "weight": 20,
                 "outsider_rep": -2,
@@ -1033,7 +1099,7 @@
                 "exp": 10,
                 "weight": 20,
                 "new_cat": [
-                    ["age:senior", "male", "backstory:refugee6", "status:elder"]
+                    ["age:senior", "backstory:refugee6", "status:elder"]
                 ],
                 "relationships": [
                     {
@@ -1059,7 +1125,7 @@
                 "stat_skill": ["LORE,1", "STORY,1"],
                 "can_have_stat": ["any"],
                 "new_cat": [
-                    ["age:senior", "male", "backstory:refugee6", "status:elder"]
+                    ["age:senior", "backstory:refugee6", "status:elder"]
                 ],
                 "relationships": [
                     {
@@ -1134,7 +1200,16 @@
                 "weight": 20,
                 "outsider_rep": -1,
                 "new_cat": [
-                    ["age:senior", "male", "backstory:refugee6", "meeting", "dead"]
+                    ["age:senior",  "backstory:refugee6", "meeting", "dead"]
+                ]
+            },
+            {
+                "text": "The patrol immediately stops their border marking and switches to tracking the scent of the intruder instead. At the end of the trail they find an old kittypet, wheezing {PRONOUN/n_c:0/poss} Twoleg's name. They try to drive the kittypet past the border - but the elderly cat is too weak.",
+                "exp": 0,
+                "weight": 20,
+                "outsider_rep": -1,
+                "new_cat": [
+                    ["age:senior", "backstory:refugee6", "meeting", "dead"]
                 ]
             }
         ],
@@ -1145,7 +1220,7 @@
                 "weight": 20,
                 "outsider_rep": -2,
                 "new_cat": [
-                    ["age:senior", "male", "backstory:refugee6", "meeting", "dead"]
+                    ["age:senior", "backstory:refugee6", "meeting", "dead"]
                 ]
             }
         ]
@@ -1164,11 +1239,11 @@
         },
         "weight": 20,
         "intro_text": "Padding along the border, p_l checks once - twice - three times... and crosses over c_n's markers, venturing beyond into unclaimed land.",
-        "decline_text": "p_l thinks better of {PRONOUN/p_l/poss} risky adventure and retreats back to known territory.",
+        "decline_text": "p_l thinks better of {PRONOUN/p_l/poss} risky adventure, and retreats back to known territory.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "There's no guarantee that {PRONOUN/n_c:0/subject}{VERB/n_c:0/'re/'s} still in the area - so p_l tastes the air in the hope of picking up {PRONOUN/n_c:0/poss} scent. n_c:0 is basking on some Twoleg rubbish, but when {PRONOUN/n_c:0/subject} {VERB/n_c:0/spot/spots} p_l, {PRONOUN/n_c:0/subject} {VERB/n_c:0/jump/jumps} down, trotting over with tail up to happily touch noses with {PRONOUN/p_l/object}.",
+                "text": "There's no guarantee that {PRONOUN/n_c:0/subject}{VERB/n_c:0/'re/'s} still in the area - so p_l tastes the air in the hope of picking up {PRONOUN/n_c:0/poss} scent. n_c:0 is basking on some Twoleg rubbish, but when {PRONOUN/n_c:0/subject} {VERB/n_c:0/spot/spots} p_l, {PRONOUN/n_c:0/subject} {VERB/n_c:0/jump/jumps} down, trotting over, tail up, to happily touch noses with {PRONOUN/p_l/object}.",
                 "exp": 10,
                 "weight": 20,
                 "new_cat": [
@@ -1429,11 +1504,23 @@
                 "exp": 0,
                 "weight": 20,
                 "outsider_rep": -1
+            },
+            {
+                "text": "The patrol attempts to take the kit to the Twolegplace instead of leaving it, but it dies on the journey. They give it a small burial.",
+                "exp": 0,
+                "weight": 20,
+                "outsider_rep": -1
             }
         ],
         "antag_success_outcomes": [
             {
                 "text": "The patrol can't bear to leave the kit alone, so they take it to the border of the closest Clan and wait for a patrol to arrive. The other Clan agrees to take the kit.",
+                "exp": 10,
+                "weight": 20,
+                "outsider_rep": -2
+            },
+            {
+                "text": "The patrol can't bring themselves to leave the kit here, and bring it to the Twolegplace. There's no way it would fit in in c_n.",
                 "exp": 10,
                 "weight": 20,
                 "outsider_rep": -2

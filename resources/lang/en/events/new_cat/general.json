@@ -704,5 +704,49 @@
             "current_rep": ["any"],
             "changed": -1
         }
+    },
+    {
+        "event_id": "gen_new_cat_war_freshblood1",
+        "location": ["any"],
+        "season": ["any"],
+        "sub_type": ["war"],
+        "weight": 15,
+        "event_text": "o_c_n has many more warriors than c_n- m_c considers looking for fresh blood elsewhere. On an expedition outside the borders, a patrol manages to find n_c:0, who agrees to join the Clan on the promise of a reliable food source.",
+        "m_c": {
+            "status": [
+                "leader", "deputy", "mediator"
+            ]
+        },
+        "new_cat": [
+          [
+            "old_name", 
+	        "backstory:otherclan1",
+            "status:warrior"
+          ]
+        ]
+    },
+    {
+        "event_id": "gen_new_cat_war_freshblood2",
+        "location": ["any"],
+        "season": ["any"],
+        "sub_type": ["war"],
+        "weight": 15,
+        "event_text": "m_c, feeling as if c_n's ranks are much too thin for this war, organizes a patrol to bring in warriors from outside the Clan. They find n_c:0 skulking around the borders, eager to aid in any retaliation against o_c_n.",
+        "m_c": {
+            "status": [
+                "leader", "deputy", "mediator"
+            ]
+        },
+        "new_cat": [
+          [
+            "old_name", 
+            "backstory:ostracized_warrior,disgraced1,disgraced2,disgraced3", 
+            "status:warrior"
+          ]
+        ],
+        "other_clan": {
+            "current_rep": ["any"],
+            "changed": -2
+        }
     }
 ]
