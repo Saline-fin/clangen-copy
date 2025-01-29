@@ -4703,7 +4703,7 @@
         "min_max_status": {
             "normal adult": [1, 6]
         },
-        "weight": 5,
+        "weight": 76,
         "intro_text": "The patrol is tense as they patrol near o_c_n. Things have been hostile lately, so it's with surprise that p_l sees two kits from o_c_n playing close to the border.",
         "decline_text": "It's not {PRONOUN/p_l/poss} problem that those kits are alone and vulnerable. o_c_n should keep a closer eye on their kits.",
         "chance_of_success": 35,
@@ -4812,7 +4812,7 @@
             {
                 "text": "p_l orders the patrol to go back to camp, asking that r_c be left behind to help {PRONOUN/p_l/object}. As p_l grabs the kits by their scruff, a o_c_n patrol suddenly appears, looking furious, with their claws out and fangs bared! p_l and r_c race back over to their side of the border, just barely escaping the wrath of o_c_n warriors. It seems they've accidentally stolen two kits now.",
                 "exp": 20,
-                "weight": 20,
+                "weight": 80,
                 "other_clan_rep": -8,
                 "new_cat": [
                     ["age: kitten", "backstory: otherclan5"],
@@ -4843,6 +4843,18 @@
                 "text": "p_l and the patrol cross the border to steal the two kits when they are thwarted by an o_c_n patrol that was looking for the kits. Fox-dung, a good opportunity to weaken o_c_n has failed.",
                 "exp": 0,
                 "weight": 20,
+                "other_clan_rep": -1
+            },
+            {
+                "text": "p_l and the patrol cross the border to steal the two kits when they are ambushed by o_c_n warriors. Fox-dung! It's a trap! The patrol retreats, r_c limping, but p_l is disgusted that o_c_n would dare use their kits in such a way.",
+                "exp": 0,
+                "weight": 80,
+                "injury":[
+                    {
+                        "cats":["r_c"],
+                        "injuries":["battle_injury"]
+                    }
+                ],
                 "other_clan_rep": -1
             }
         ],
