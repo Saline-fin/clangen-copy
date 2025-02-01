@@ -1,5 +1,15 @@
 {
-  "special_suffixes": {
+    "special_prefixes": {
+    "newborn": "Young ",
+    "kitten": "Young ",
+    "apprentice": "Student ",
+    "medicine cat apprentice": "Early Healer ",
+    "mediator apprentice": "Disciple ",
+    "warrior": "Guard ",
+    "medicine cat": "Healer ",
+    "leader": "High "
+    },
+    "special_suffixes": {
     "newborn": "kit",
     "kitten": "kit",
     "apprentice": "paw",

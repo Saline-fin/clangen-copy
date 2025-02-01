@@ -283,10 +283,12 @@ class Name:
                 return (
                     self.prefix + self.names_dict["special_suffixes"][adjusted_status]
                 )
-        if (
-            self.cat.status in self.names_dict["special_suffixes"]
-            and not self.specsuffix_hidden
-        ):
+        if self.cat.status in self.names_dict["special_prefixes"]:
+            if self.cat.status in self.names_dict["special_suffixes"] and not self.specsuffix_hidden:
+                return self.names_dict["special_prefixes"][self.cat.status] + self.prefix + self.names_dict["special_suffixes"][self.cat.status]
+            else:
+                return self.names_dict["special_prefixes"][self.cat.status] + self.prefix + self.suffix
+        elif self.cat.status in self.names_dict["special_suffixes"] and not self.specsuffix_hidden:
             return self.prefix + self.names_dict["special_suffixes"][self.cat.status]
         if game.config["fun"]["april_fools"]:
             return f"{self.prefix}egg"
