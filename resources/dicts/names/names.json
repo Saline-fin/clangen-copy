@@ -7,6 +7,9 @@
     "mediator apprentice": "Disciple ",
     "warrior": "Guard ",
     "medicine cat": "Healer ",
+    "mediator": "Therapist ",
+    "elder": "Advisor ",
+    "deputy": "Second-in-command ",
     "leader": "High "
     },
     "special_suffixes": {

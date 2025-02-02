@@ -491,6 +491,7 @@ class ChangeCatName(UIWindow):
         )
 
         self.specsuffic_hidden = self.the_cat.name.specsuffix_hidden
+        self.specprefic_hidden = self.the_cat.name.specprefix_hidden
 
         self.heading = pygame_gui.elements.UITextBox(
             "windows.change_name_title",
@@ -568,6 +569,24 @@ class ChangeCatName(UIWindow):
             container=self,
         )
 
+        self.toggle_spec_block_on_two = UIImageButton(
+            ui_scale(pygame.Rect((122 + x_pos, 80 + y_pos), (34, 34))),
+            "",
+            object_id="@unchecked_checkbox",
+            tool_tip_text="windows.remove_spec_block_two",
+            manager=MANAGER,
+            container=self,
+        )
+
+        self.toggle_spec_block_off_two = UIImageButton(
+            ui_scale(pygame.Rect((122 + x_pos, 80 + y_pos), (34, 34))),
+            "",
+            object_id="@checked_checkbox",
+            tool_tip_text="windows.add_spec_block_two",
+            manager=MANAGER,
+            container=self,
+        )
+
         if self.the_cat.status in self.the_cat.name.names_dict["special_suffixes"]:
             self.suffix_entry_box = pygame_gui.elements.UITextEntryLine(
                 ui_scale(pygame.Rect((159 + x_pos, 50 + y_pos), (120, 30))),
@@ -606,6 +625,24 @@ class ChangeCatName(UIWindow):
             )
         self.set_blocking(True)
 
+        if self.the_cat.status in self.the_cat.name.names_dict["special_prefixes"]:
+            if not self.the_cat.name.specprefix_hidden:
+                self.toggle_spec_block_on_two.show()
+                self.toggle_spec_block_on_two.enable()
+                self.toggle_spec_block_off_two.hide()
+                self.toggle_spec_block_off_two.disable()
+            else:
+                self.toggle_spec_block_on_two.hide()
+                self.toggle_spec_block_on_two.disable()
+                self.toggle_spec_block_off_two.show()
+                self.toggle_spec_block_off_two.enable()
+        else:
+            self.toggle_spec_block_on_two.disable()
+            self.toggle_spec_block_on_two.hide()
+            self.toggle_spec_block_off_two.disable()
+            self.toggle_spec_block_off_two.hide()
+        self.set_blocking(True)
+
     def process_event(self, event):
         if event.type == pygame_gui.UI_BUTTON_START_PRESS:
             if event.ui_element == self.done_button:
@@ -613,12 +650,19 @@ class ChangeCatName(UIWindow):
 
                 self.the_cat.specsuffix_hidden = self.specsuffic_hidden
                 self.the_cat.name.specsuffix_hidden = self.specsuffic_hidden
+                self.the_cat.specprefix_hidden = self.specprefic_hidden
+                self.the_cat.name.specprefix_hidden = self.specprefic_hidden
 
                 # Note: Prefixes are not allowed be all spaces or empty, but they can have spaces in them.
-                if sub(r"[^A-Za-z0-9 ]+", "", self.prefix_entry_box.get_text()) != "":
-                    self.the_cat.name.prefix = sub(
-                        r"[^A-Za-z0-9 ]+", "", self.prefix_entry_box.get_text()
-                    )
+                if (
+                    self.the_cat.status
+                    not in self.the_cat.name.names_dict["special_prefixes"]
+                    or self.the_cat.name.specprefix_hidden
+                ):
+                    if sub(r"[^A-Za-z0-9 ]+", "", self.prefix_entry_box.get_text()) != "":
+                        self.the_cat.name.prefix = sub(
+                            r"[^A-Za-z0-9 ]+", "", self.prefix_entry_box.get_text()
+                        )
 
                 # Suffixes can be empty, if you want. However, don't change the suffix if it's currently being hidden
                 # by a special suffix.
@@ -673,6 +717,18 @@ class ChangeCatName(UIWindow):
                 self.suffix_entry_box.set_text("")
                 self.suffix_entry_box.rebuild()
                 self.suffix_entry_box.disable()
+            elif event.ui_element == self.toggle_spec_block_on_two:
+                self.specprefic_hidden = True
+                self.toggle_spec_block_on_two.disable()
+                self.toggle_spec_block_on_two.hide()
+                self.toggle_spec_block_off_two.enable()
+                self.toggle_spec_block_off_two.show()
+            elif event.ui_element == self.toggle_spec_block_off_two:
+                self.specprefic_hidden = False
+                self.toggle_spec_block_off_two.disable()
+                self.toggle_spec_block_off_two.hide()
+                self.toggle_spec_block_on_two.enable()
+                self.toggle_spec_block_on_two.show()
             elif event.ui_element == self.back_button:
                 game.all_screens["profile screen"].exit_screen()
                 game.all_screens["profile screen"].screen_switches()

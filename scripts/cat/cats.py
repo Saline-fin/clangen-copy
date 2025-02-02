@@ -115,6 +115,7 @@ class Cat:
         adoptive_parents=None,
         suffix=None,
         specsuffix_hidden=False,
+        specprefix_hidden=False,
         ID=None,
         moons=None,
         example=False,
@@ -216,6 +217,7 @@ class Cat:
         self.favourite = False
 
         self.specsuffix_hidden = specsuffix_hidden
+        self.specprefix_hidden = specprefix_hidden
         self.inheritance = None
 
         self.history = None
@@ -311,6 +313,7 @@ class Cat:
                 suffix,
                 biome=biome,
                 specsuffix_hidden=self.specsuffix_hidden,
+                specprefix_hidden=self.specprefix_hidden,
                 load_existing_name=loading_cat,
                 cat=self,
             )
@@ -320,6 +323,7 @@ class Cat:
                 prefix,
                 suffix,
                 specsuffix_hidden=self.specsuffix_hidden,
+                specprefix_hidden=self.specprefix_hidden,
                 load_existing_name=loading_cat,
                 cat=self,
             )
@@ -3396,6 +3400,7 @@ class Cat:
                 "name_prefix": self.name.prefix,
                 "name_suffix": self.name.suffix,
                 "specsuffix_hidden": self.name.specsuffix_hidden,
+                "specprefix_hidden": self.name.specprefix_hidden,
                 "gender": self.gender,
                 "gender_align": self.genderalign,
                 "pronouns": self._pronouns

@@ -75,13 +75,14 @@ class Name:
         suffix=None,
         biome=None,
         specsuffix_hidden=False,
+        specprefix_hidden=False,
         load_existing_name=False,
         cat=None,
     ):
         self.prefix = prefix
         self.suffix = suffix
         self.specsuffix_hidden = specsuffix_hidden
-
+        self.specprefix_hidden = specprefix_hidden
         self.cat = cat
 
         try:
@@ -283,7 +284,7 @@ class Name:
                 return (
                     self.prefix + self.names_dict["special_suffixes"][adjusted_status]
                 )
-        if self.cat.status in self.names_dict["special_prefixes"]:
+        if self.cat.status in self.names_dict["special_prefixes"] and not self.specprefix_hidden:
             if self.cat.status in self.names_dict["special_suffixes"] and not self.specsuffix_hidden:
                 return self.names_dict["special_prefixes"][self.cat.status] + self.prefix + self.names_dict["special_suffixes"][self.cat.status]
             else:
